@@ -20,5 +20,10 @@ exports.config = {
         "app": join(process.cwd(), './app/android/WebDriverIO.apk'),
         "appWaitActivity": "com.wdiodemoapp.MainActivity"
         
-    }]
+    }],
+
+    waitForTimeout: 40000,
+    mochaOpts: {
+        timeout: 500000
+    }
 }
