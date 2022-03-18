@@ -170,9 +170,8 @@
         "yallist": "^4.0.0",
         "yauzl": "^2.10.0"
     },
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "wdio": "wdio run wdio.conf.js"
+    "scripts": {      
+        "test": "wdio run wdio.conf.js"
     },
     "repository": {
         "type": "git",

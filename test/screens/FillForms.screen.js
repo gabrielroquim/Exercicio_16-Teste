@@ -2,20 +2,20 @@ class FillForms {
     get #enterFormsScreen() { return $('~Forms') }
     async EnterForms() { await this.#enterFormsScreen.click() }
 
-    get #inputField() { return $('~text-input') }
-    get #resultadoInput(){ return $('input-text-result')}
+    get #inputField() { return $('~text-input') }    
     async fillInputField(input) { await this.#inputField.setValue(input) } // o setValue, envia uma sequencia de elementos do teclado, documentaçã API webdririo
-    async resultInpult(){ return await this.#resultadoInput.getTexto() }
+    async textoInput (){
+        return await this.#inputField.getTexto()
+    }
 
-    get #switchBtn() { return $('~switch') }
-    get #resultadoSwitch(){ return $('switch-text')}
+    get #switchBtn() { return $('~switch') }    
     async TicSwitch() { await this.#switchBtn.click() }
-    async resultSwitch(){ await this.#resultadoSwitch()}
+   
 
     get #dropDown() { return $('~Dropdown') }
     async goDrop() { await this.#dropDown.click() }
-    get #dropTexto(){ return $('android=new UiSelector().text("webdriver.io is awesome")')}
-    async resultadoDrop(){ return await this.#dropTexto.getTexto()}
+   // get #dropTexto(){ return $('android=new UiSelector().text("Appium is awesome")')}
+   // async resultadoDrop(){ return await this.#dropTexto.getTexto()}
 
 
     get #escolheDrop() { return $('id=android:id/text1') }
@@ -23,6 +23,8 @@ class FillForms {
     
     get #ativarBtn() {return $('//android.view.ViewGroup[@content-desc="button-Active"]')}
     async ativado() { await this.#ativarBtn.click()}
+   // get #botaoAtivado (){ return $ ('android=new UiSelector().text("This button is active")')}
+    //async btnAtivado() { await this.#botaoAtivado()}
 }
 
 module.exports = new FillForms()
