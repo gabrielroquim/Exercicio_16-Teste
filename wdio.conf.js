@@ -3,7 +3,7 @@ const { join } = require('path')
 exports.config = {
     hostname:'localhost',
     port: 4723,
-   // services: ['appium'],
+   services: ['appium'],
     path: '/wd/hub',
     specs:[
         './test/specs/**/*.js'
@@ -13,12 +13,12 @@ exports.config = {
        // specFiltering: true
    // },
     capabilities: [{
-        "appium:platformName": "Android",
-        "appium:platformVersion": "12.0",
-        "appium:deviceName": "TestesDrive",
-        "appium:automationName": "UiAutomator2",
-        "appium:appWaitActivity": "com.wdiodemoapp.MainActivity"
-        
+        "platformName": "Android",
+        "platformVersion": "12.0",
+        "deviceName": "TestesDriver",
+        "automationName": "UiAutomator2",
+        "appWaitActivity": "com.wdiodemoapp.MainActivity"
+        "app": join(process.cwd()), './app/android/WebDriverIO.apk'      
     }],
 
     waitForTimeout: 40000,

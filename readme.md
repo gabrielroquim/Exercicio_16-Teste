@@ -15,3 +15,5 @@
 * olhando a documentação do webdriio, ele sugere const para capturar terxto, contudo nao consegui.
 
 * Eu criei outra pasta 'DropScreen", pois esse drop estava me confundindo junto da pasta Fillfoms
+
+* na aula 17 professor disse que pra cada tela é bom ter um arquivo screeen
