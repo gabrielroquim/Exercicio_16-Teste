@@ -15,7 +15,8 @@ describe('Acessar Formulario', () => {
     // O expect vai trazar o resultado esperado para validar o teste
     expect(await FillFormsScreen.textoInput()).toEqual('Teste')
     expect(await FillFormsScreen.verificaSw()).toEqual('Click to turn the switch OFF')
-    expect(await DropScreenScreen.verifiDrop()).toEqual('This button is active')
+    expect(await DropScreenScreen.buttonResult()).toEqual('This button is active')
+   // expect(await DropScreenScreen.verifiDrop()).toEqual('This button is active')
 
   });
 
