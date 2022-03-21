@@ -1,13 +1,16 @@
 class FillForms {
-    //get #inputField() { return $('~text-input') }
+    // get #inputField() { return $('~text-input') }
     get #inputField() { return $('//android.widget.EditText[@content-desc="text-input"]') }
+   // get #haveTyped() { return $('~input-text-result') }
+    // get #haveTyped() { return $('//android.widget.TextView[@content-desc="input-text-result"]') }
     async fillInputField(input) { await this.#inputField.setValue(input) } // o setValue, envia uma sequencia de elementos do teclado, documentaçã API webdririo
-    async textoInput() { return await this.#inputField.getText() }
+    //async textoInput() { return await this.#inputField.getText() }
+    //async textoTyped() { return await this.#haveTyped.getText() }
 
     get #switchBtn() { return $('~switch') }
     async TicSwitch() { await this.#switchBtn.click() }
-    get #fillSwitch() { return $('~switch-text') }
-    async verificaSw() { return await this.#fillSwitch.getText() }
+   // get #fillSwitch() { return $('~switch-text') }
+   // async verificaSw() { return await this.#fillSwitch.getText() }
 
 
     get #dropDown() { return $('~Dropdown') }
