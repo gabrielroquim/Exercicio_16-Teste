@@ -13,12 +13,11 @@ exports.config = {
        // specFiltering: true
    // },
     capabilities: [{
-        "platformName": "Android",
-        "platformVersion": "12.0",
-        "deviceName": "TestesDrive",
-        "automationName": "UiAutomator2",
-        "app": join(process.cwd(), './app/android/WebDriverIO.apk'),
-        "appWaitActivity": "com.wdiodemoapp.MainActivity"
+        "appium:platformName": "Android",
+        "appium:platformVersion": "12.0",
+        "appium:deviceName": "TestesDrive",
+        "appium:automationName": "UiAutomator2",
+        "appium:appWaitActivity": "com.wdiodemoapp.MainActivity"
         
     }],
 
