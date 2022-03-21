@@ -3,10 +3,9 @@ class FillForms {
     async EnterForms() { await this.#enterFormsScreen.click() }
 
     get #inputField() { return $('~text-input') }
+   // get #inputField() { return $('//android.widget.EditText[@content-desc="text-input"]')}
     async fillInputField(input) { await this.#inputField.setValue(input) } // o setValue, envia uma sequencia de elementos do teclado, documentaçã API webdririo
-    async textoInput() {
-        return await this.#inputField.getText()
-    }
+    async textoInput() { return await this.#inputField.getText() }
 
     get #switchBtn() { return $('~switch') }
     async TicSwitch() { await this.#switchBtn.click() }
@@ -23,18 +22,14 @@ class FillForms {
     get #ativarBtn() { return $('//android.view.ViewGroup[@content-desc="button-Active"]') }
     async ativado() { await this.#ativarBtn.click() }
 
-    // async textoDropAct() {
-    //return await this.#dropActive.getText()
-    //  }
-      
-
-    get #dropActive() { return $('//android.widget.LinearLayout/android.widget.Button[1]') }
-    async confirmarAct() { await this.#dropActive.click() }
-
-    get #validaDrop() { return $('//hierarchy/android.widget.FrameLayout')}
-    async confimarDrop(){ return await this.#validaDrop.getText()}
+   // get #dropActive() { return $('//android.widget.LinearLayout/android.widget.Button[1]') }
+    // get #textoDrive() { return $("~ASK ME LATER") }
+    //get  #textoDrive()   { return $('id=button3')()  }       
    
-  
+
+    // get #dropMsn() { return $('//android.widget.ScrollView/android.widget.LinearLayout/android.widget.Button[1]')}
+    //async verifiDrop(){ return await this.#dropMsn.getText()}    
+   // async #confirmarAct() { return await this.#dropActive.click() }
 
 
 }

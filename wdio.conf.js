@@ -9,9 +9,9 @@ exports.config = {
         './test/specs/**/*.js'
     ],
     framework: 'mocha',
-    featureFlags: {
-        specFiltering: true
-    },
+   // featureFlags: {
+       // specFiltering: true
+   // },
     capabilities: [{
         "platformName": "Android",
         "platformVersion": "12.0",
