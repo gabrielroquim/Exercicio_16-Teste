@@ -11,11 +11,11 @@ describe('Acessar Formulario', () => {
     await FillFormsScreen.okAppium()
     await FillFormsScreen.ativado()
     await DropScreenScreen.clickOk()
-   // $('~input-text-result').setValue('Teste')
-     // não consegui usar expect
+    // $('~input-text-result').setValue('Teste')
+    // não consegui usar expect
     expect(await DropScreenScreen.dropOK()).toEqual('This button is active')
-    expect(await FillFormsScreen.textHeve()).toEqual('Teste')
- expect( await FillFormsScreen.clickTurnSwi()).toEqual('Click to turn the switch ON')
+    // expect(await FillFormsScreen.gettextHave()).toEqual('Teste')   
+    //expect(await FillFormsScreen.droptext()).toEqual('Appium is awesome')
 
 
   });
