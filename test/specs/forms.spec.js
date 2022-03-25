@@ -10,9 +10,10 @@ describe('Acessar Formulario', () => {
     await FillFormsScreen.typeInputField('Teste')
     await FillFormsScreen.ticSwitch()
     await FillFormsScreen.abreDrop()
-    //await FillFormsScreen.okAppium()
-    await FillFormsScreen.ativado()
+    //await FillFormsScreen.okAppium()    
     await FillFormsScreen.abreDrop()
+    await FillFormsScreen.ativado()
+    await activeScreenScreen.OkDrop()
     //await FillFormsScreen.textTurn()
 
 
