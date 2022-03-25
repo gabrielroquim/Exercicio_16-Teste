@@ -1,6 +1,6 @@
 class HomePagScreen{
 
-    get #enterFormsScreen() { return $('~Forms') }
-    async enterForms() { await this.#enterFormsScreen.click() }
+    get #FormsScreen() { return $('~Forms') }
+    async clickForms() { await this.#FormsScreen.click() }
 }
 module.exports = new HomePagScreen
