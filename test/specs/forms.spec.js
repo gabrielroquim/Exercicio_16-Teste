@@ -1,7 +1,6 @@
 // para cada arquivo criado na pasta screen tem que ter o cons
 
-const activeScreenScreen = require("../screens/active.Screen.screen");
-
+const activeScreen = require("../screens/active.screen");
 const FillFormsScreen = require("../screens/FillForms.screen");
 const HomePagScreen = require("../screens/HomePag.screen");
 describe('Acessar Formulario', () => {
@@ -9,12 +8,10 @@ describe('Acessar Formulario', () => {
     await HomePagScreen.clickForms()
     await FillFormsScreen.typeInputField('Teste')
     await FillFormsScreen.ticSwitch()
-    await FillFormsScreen.abreDrop()
-    //await FillFormsScreen.okAppium()    
-    await FillFormsScreen.abreDrop()
+    await FillFormsScreen.abreDrop()    
     await FillFormsScreen.ativado()
-    await activeScreenScreen.OkDrop()
-    //await FillFormsScreen.textTurn()
+    await activeScreen.OkDrop()
+ 
 
 
     expect(await activeScreenScreen.textoDrop()).toEqual('This button is active')

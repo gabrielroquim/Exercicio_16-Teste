@@ -6,4 +6,5 @@ class ActiveScreen {
     async textoDrop() { return await this.#dropText.getText() }
 }
 
+
 module.exports = new ActiveScreen
