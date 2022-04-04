@@ -1,4 +1,3 @@
-// para cada arquivo criado na pasta screen tem que ter o cons
 const FillFormsScreen = require("../screens/FillForms.screen");
 const HomePagScreen = require("../screens/HomePag.screen");
 

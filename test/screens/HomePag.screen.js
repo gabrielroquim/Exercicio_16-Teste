@@ -1,5 +1,4 @@
-
- class HomepagScreen {
+class HomepagScreen {
     get #enterFormPage(){ return $('~Forms')}
 
     async clickForms(){ this.#enterFormPage.click()}

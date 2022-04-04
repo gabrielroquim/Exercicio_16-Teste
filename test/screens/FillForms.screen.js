@@ -1,4 +1,3 @@
-
 class FillFormsScreen {
 
     get #inputField() { return $('//android.widget.EditText[@content-desc="text-input"]') }
@@ -34,5 +33,3 @@ class FillFormsScreen {
 
 }
 module.exports = new FillFormsScreen
-
-
