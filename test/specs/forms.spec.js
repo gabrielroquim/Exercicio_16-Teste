@@ -9,14 +9,15 @@ describe('Acessar Formulario', () => {
     await FillFormsScreen.ticSwitch();
     await FillFormsScreen.abreDrop();
     await FillFormsScreen.dropTextConfirma();
+    await FillFormsScreen.seleFrom();
     await FillFormsScreen.clickActive();
-  
-
-   // expect(await activeScreenScreen.textoDrop()).toEqual('This button is active')
+    await FillFormsScreen.textDropActive()
+    await FillFormsScreen.confirmaOk()
+    
 
     // expect(await FillFormsScreen.droptext()).toEqual('Appium is awesome')
-    expect(await FillFormsScreen.dropTextConfirma()).toContain('webdriver.io is awesome')
-
+    expect(await FillFormsScreen.dropTextConfirma()).toEqual('webdriver.io is awesome')
+    expect(await FillFormsScreen.textDropActive()).toContain('This button is')
 
   });
 
